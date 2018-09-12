@@ -1,0 +1,95 @@
+#guesserContainer {
+  background-image: url("./../../static/media/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  height: 650px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 75% 25%;
+  margin: 15px;
+  align-items: center;
+  font-family: cursive;
+}
+
+#guesserContainer .canvas {
+  margin-top: 30px;
+  width: auto;
+  height: 500px;
+}
+
+#canvas1 {
+  grid-column-start: 1;
+  margin-left: 50px;
+}
+
+#canvas2 {
+  grid-column-start: 2;
+  margin-right: 50px;
+}
+
+.guesser_area {
+  grid-column: 1/span 2;
+  align-self: center;
+  align-items: center;
+  background-image: url("./../../static/media/frame.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+#guesserContainer #infoBoard {
+}
+
+#guesserContainer .score {
+  font-size: 35px;
+}
+
+#guesserContainer input {
+  width: 50%;
+  padding-left: 30px;
+  height: 30px;
+  border-style: solid;
+}
+
+#guesserContainer button {
+  margin-top: 0px;
+  border-style: solid;
+}
+
+
+
+#result {
+  margin-left: 5%;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999999; /* Sit on top */
+  width: 90%; /* Full width */
+  height: 80%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+#result_content {
+  font-size: 40px;
+  margin-top: 15%;
+  align-self: center;
+  font-family: cursive;
+  color: white;
+}
+
+#close {
+    color: #aaaaaa;
+    float: right;
+    padding-right: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
